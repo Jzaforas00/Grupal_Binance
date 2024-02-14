@@ -29,10 +29,14 @@ function mostrarCryptosPagina(pagina) {
         cryptoDiv.className = 'crypto';
 
         // Preparar el modal donde se van a mostrar las crypto
-        cryptoDiv.innerHTML = `<h2 class='mt-4'>Crypto: ${simbolo}</h2>` +
-            `<strong>Precio actual: </strong>${precio_actual}` +
-            `<strong>Cambio de precio:</strong>  ${cambio_precio} <br><br>` +
-            `<hr>`;
+        cryptoDiv.innerHTML = `
+        <li>
+            <div class="crypto-info">
+                <h3 style="margin-left: 40;">Crypto: ${simbolo}</h3>
+                <p>Precio: ${precio_actual}</p>
+                <p>Cambio en las últimas 24 horas: ${cambio_precio}</p>
+            </div>
+        </li>`;
 
         // Añadir al listado
         cryptosContainer.appendChild(cryptoDiv);
