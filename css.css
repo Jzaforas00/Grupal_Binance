@@ -1,0 +1,122 @@
+body {
+  background-image: url("imgs/1.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 0, 48);
+  }
+  
+  header {
+    background-color:transparent;
+    border: 1.5px solid #42005e;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .crypto-list, .crypto-details {
+    width: 38%;
+    color: white;
+    font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 70px;
+  border-radius: 10px;
+  }
+  
+  .crypto-list ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #000000;
+    margin-left: 60px;
+  }
+  
+  .crypto-list li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+  
+  }
+  .crypto-list li:hover {
+    border-color:#fb4c9bed;
+  }
+  
+  .crypto-info h3 {
+    margin-top: 0;
+    
+  }
+ 
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -20px;
+  }
+  
+  .crypto-details {
+    margin-right: 110px;
+    margin-top: 80px;
+    background-color: #000000;
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    width: 38%;
+    border-radius: 10px;
+  }
+  .crypto-details:hover {
+    border-color:#fb4c9bed;
+  }
+  
+  footer {
+    border: 1.5px solid #42005e;
+    background-color:transparent;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 99.9%; 
+  }
+  .crypto-list p,
+.crypto-details p {
+  font-family: 'Open Sans', sans-serif;
+}
+.boton-transparente {
+  background-color: purple;
+  border: 1px solid;
+  border-color:   #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-size: 15px; 
+  padding: 8px 8px; 
+}
+.boton-transparente:hover {
+  border-color: #b109f4; 
+  color: #b109f4; 
+  background-color: white;
+}
+.imagen {
+  background-image: url("imgs/2.png"); 
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 50px; 
+  text-align: left;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+}
+
+
+
