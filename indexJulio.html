@@ -20,22 +20,22 @@
   <main>
     <div class="crypto-list">
       <h2 style="margin-left:68px; margin-top: 40px;">LISTADO DE CRYPTOMENEDA</h2>
-      <ul>
+      <ul id="cryptosContainer">
         <!-- Aquí se insertamos dinámicamente los elementos de la lista de criptomonedas -->
         <li>
           <div class="crypto-info">
-            <h3 style="margin-left: 40;">Nombre de la cryptomoneda</h3>
-            <p>Precio: $XXXX</p>
-            <p>Cambio en las últimas 24 horas: XX%</p>
+            <h3 style="margin-left: 40;">Crypto: ${simbolo}</h3>
+            <p>Precio: ${precio_actual}</p>
+            <p>Cambio en las últimas 24 horas: ${cambio_precio}</p>
           </div>
         </li>
         <!-- Repetir este bloque de código para cada criptomoneda -->
       </ul>
       <div class="pagination">
         <!-- Botones para navegar entre páginas -->
-        <button class="boton-transparente">Anterior</button>
-        <span>Página <input type="text" class="page-number"> de <span class="total-pages"> X </span></span>
-        <button class="boton-transparente">Siguiente</button>
+        <button class="boton-transparente" id="anteriorBtn" onclick="anteriorPagina()">Anterior</button>
+        <span><input type="number" id="paginaInput" min="1" class="page-number"> <button onclick="irAPagina()">Ir</button> <span class="total-pages" id="paginaActual">  </span></span>
+        <button class="boton-transparente" id="siguienteBtn" onclick="siguientePagina()">Siguiente</button>
       </div>
     </div>
     <div class="crypto-details">
@@ -49,5 +49,8 @@
   <footer>
     <p>&copy; 2024 Información de Criptomonedas</p>
   </footer>
+
+    <script src="scriptLuis.js"></script>
+    <script src="flitradoJavier.js"></script>
 </body>
 </html>
