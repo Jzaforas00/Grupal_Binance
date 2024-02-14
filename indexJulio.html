@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;1,300&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Información de Criptomonedas</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <header>
+    <div class="imagen">
+    </div>
+  </header>
+  <main>
+    <div class="crypto-list">
+      <h2 style="margin-left:68px; margin-top: 40px;">LISTADO DE CRYPTOMENEDA</h2>
+      <ul>
+        <!-- Aquí se insertamos dinámicamente los elementos de la lista de criptomonedas -->
+        <li>
+          <div class="crypto-info">
+            <h3 style="margin-left: 40;">Nombre de la cryptomoneda</h3>
+            <p>Precio: $XXXX</p>
+            <p>Cambio en las últimas 24 horas: XX%</p>
+          </div>
+        </li>
+        <!-- Repetir este bloque de código para cada criptomoneda -->
+      </ul>
+      <div class="pagination">
+        <!-- Botones para navegar entre páginas -->
+        <button class="boton-transparente">Anterior</button>
+        <span>Página <input type="text" class="page-number"> de <span class="total-pages"> X </span></span>
+        <button class="boton-transparente">Siguiente</button>
+      </div>
+    </div>
+    <div class="crypto-details">
+      <!-- Aquí mostraremos la información detallada de la criptomoneda seleccionada -->
+      <h2 style="margin-top: -5px; color:#fb4c9bed;">Detalles de la Cryptomoneda</h2>
+      <div class="details-content">
+        <!-- Los detalles se cargarán dinámicamente aquí -->
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Información de Criptomonedas</p>
+  </footer>
+</body>
+</html>
