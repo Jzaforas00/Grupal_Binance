@@ -135,10 +135,12 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
-  margin-left: 32px;
+  margin-left: 0px;
 }
 .controles-lista > div:first-child {
   margin-right: 20px;
+  margin-bottom: -10px;
+  margin-top: -10px;
 }
 
 .btn-restaurar, .ordenar-por select, .filtrar-por input, .filtrar-por button, .boton-transparente2 {

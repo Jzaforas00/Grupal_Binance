@@ -36,29 +36,7 @@
         <button class="boton-transparente" id="anteriorBtn" onclick="anteriorPagina()">Anterior</button>
         <span><input type="number" id="paginaInput" min="1" class="page-number"> <button onclick="irAPagina()">Ir</button> <span class="total-pages" id="paginaActual">  </span></span>
         <button class="boton-transparente" id="siguienteBtn" onclick="siguientePagina()">Siguiente</button><br><br>
-          <div class="controles-lista">
-            <div><span>Restaurar al listado Original</span>
-              <button class="boton-transparente2" id="btn-restaurar" onclick="restaurarListadoOriginal()">Restaurar listado</button><br><br>
-            </div>
           
-            <div class="ordenar-por">
-              <label for="ordenar-precio">Ordenar por cambio de precio  </label>
-              <select id="ordenar-precio">
-                <option value="asc">Mayor a menor</option>
-                <option value="desc">Menor a mayor</option>
-              </select>
-              
-            </div><br>
-            <div class="filtrar-por">
-              <br>
-              <div>
-                <label for="filtrar-simbolo">Filtrar:</label>
-                <input type="text" id="filtrar-simbolo" placeholder="Escribe el símbolo">
-                <button class="boton-transparente" id="btn-filtrar" onclick="filtrarPorSimbolo()">Filtrar</button>
-              </div>
-          </div>
-          
-        </div>
         
         
         <br><br><br><br>
@@ -70,6 +48,29 @@
       <div class="details-content">
         <!-- Los detalles se cargarán dinámicamente aquí -->
       </div>
+      <div class="filtrar-por">
+        <br>
+        <div class="controles-lista">
+          <div><span>Restaurar al listado Original</span>
+            <button class="boton-transparente2" id="btn-restaurar" onclick="restaurarListadoOriginal()">Restaurar listado</button><br><br>
+          </div>
+        
+          <div class="ordenar-por">
+            <label for="ordenar-precio">Ordenar por cambio de precio  </label>
+            <select id="ordenar-precio">
+              <option value="asc">Mayor a menor</option>
+              <option value="desc">Menor a mayor</option>
+            </select>
+          </div><br>
+          
+        
+      </div>
+        <div>
+          <label for="filtrar-simbolo">Filtrar:</label>
+          <input type="text" id="filtrar-simbolo" placeholder="Escribe el símbolo">
+          <button class="boton-transparente" id="btn-filtrar" onclick="filtrarPorSimbolo()">Filtrar</button>
+        </div>
+    </div>
     </div>
   </main>
   <footer>
