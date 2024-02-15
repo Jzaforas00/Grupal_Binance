@@ -141,7 +141,7 @@ body {
   margin-right: 20px;
 }
 
-.btn-restaurar, .ordenar-por select, .filtrar-por input, .filtrar-por button, .boton-transparente2 {
+.btn-restaurar, .ordenar-por select, .filtrar-por input, .filtrar-por button, .boton-transparente2, .MayorMenor{
   background-color:rgb(0, 0, 0);
   border: 1px solid;
   border-color: #ffffff;
@@ -156,7 +156,7 @@ body {
   width: 150px;
 }
 
-.btn-restaurar:hover, .ordenar-por select:hover, .filtrar-por input:hover, .filtrar-por button:hover, .boton-transparente2:hover {
+.btn-restaurar:hover, .ordenar-por select:hover, .filtrar-por input:hover, .filtrar-por button:hover, .boton-transparente2:hover, .MayorMenor:hover {
   border-color: rgb(255, 255, 255);
   color: rgb(7, 7, 7);
   background-color:  #fb2e80;
