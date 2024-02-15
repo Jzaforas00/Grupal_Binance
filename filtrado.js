@@ -9,8 +9,7 @@ if (localStorage.getItem('cryptosData')) {
 // Función para restaurar el listado original
 function restaurarListadoOriginal() {
     if (localStorage.getItem('cryptosData')) {
-        listadoCryptos = JSON.parse(localStorage.getItem('cryptosData'));
-        mostrarCryptosPagina(paginaActual);
+        window.location.reload();
     } else {
         // Si no hay datos en el localStorage, se puede realizar una llamada a la API
         fetchDataFromAPI();
@@ -30,7 +29,7 @@ function ordenarPorCambioPrecioMenor() {
 
 // Función para filtrar el listado por un símbolo concreto
 function filtrarPorSimbolo() {
-    const filtro = document.getElementById('filtroSimbolo').value.trim().toUpperCase();
+    const filtro = document.getElementById('filtrar-simbolo').value.trim().toUpperCase();
     if (filtro === '') {
         // Si no hay filtro, restaurar el listado original
         restaurarListadoOriginal();
