@@ -45,22 +45,21 @@
     <div class="crypto-details fijo">
       <!-- Aquí mostraremos la información detallada de la criptomoneda seleccionada -->
       <h2 style="margin-top: -5px; color:#fb4c9bed;">Detalles de la Cryptomoneda</h2>
-      <div class="details-content">
+      <div class="details-content" id="detalles">
         <!-- Los detalles se cargarán dinámicamente aquí -->
       </div>
       <div class="filtrar-por">
         <br>
+        <hr>
         <div class="controles-lista">
           <div><span>Restaurar al listado Original</span>
             <button class="boton-transparente2" id="btn-restaurar" onclick="restaurarListadoOriginal()">Restaurar listado</button><br><br>
           </div>
         
           <div class="ordenar-por">
-            <label for="ordenar-precio">Ordenar por cambio de precio  </label>
-            <select id="ordenar-precio">
-              <option value="asc">Mayor a menor</option>
-              <option value="desc">Menor a mayor</option>
-            </select>
+            <label for="MayorMenor">Ordenar por cambio de precio:  </label>
+                <button class="MayorMenor" onclick="ordenarPorCambioPrecioMayor()">Mayor a menor</button>
+                <button class="MayorMenor" onclick="ordenarPorCambioPrecioMenor()">Menor a mayor</button><br>
           </div><br>
           
         
@@ -79,5 +78,6 @@
 
     <script src="scriptLuis.js"></script>
     <script src="flitradoJavier.js"></script>
+    <script src="DatosAlfonso.js"></script>
 </body>
 </html>
