@@ -30,7 +30,7 @@ function mostrarCryptosPagina(pagina) {
 
         // Preparar el modal donde se van a mostrar las crypto
         cryptoDiv.innerHTML = `
-        <li>
+        <li onclick="mostrarDetalles('${simbolo}')">
             <div class="crypto-info">
                 <h3 style="margin-left: 40;">Crypto: ${simbolo}</h3>
                 <p>Precio: ${precio_actual}</p>
@@ -43,7 +43,7 @@ function mostrarCryptosPagina(pagina) {
     });
 
     // Actualizar la información de la página actual
-    paginaActualSpan.textContent = `Página ${pagina} de ${Math.ceil(listadoCryptos.length / cryptoPorPagina)}`;
+    paginaActualSpan.textContent = `${pagina} de ${Math.ceil(listadoCryptos.length / cryptoPorPagina)}`;
 
     // Habilitar o deshabilitar los botones de la paginación según sea conveniente
     anteriorBtn.disabled = pagina === 1;
@@ -57,6 +57,7 @@ function irAPagina() {
         paginaActual = paginaDeseada;
         mostrarCryptosPagina(paginaActual);
     }
+    borrarDetalles();
 }
 
 // Función para ir a la página anterior
@@ -65,6 +66,7 @@ function anteriorPagina() {
         paginaActual--;
         mostrarCryptosPagina(paginaActual);
     }
+    borrarDetalles();
 }
 
 // Función para ir a la página siguiente
@@ -73,6 +75,7 @@ function siguientePagina() {
         paginaActual++;
         mostrarCryptosPagina(paginaActual);
     }
+    borrarDetalles();
 }
 
 // Obtener los datos almacenados localmente, si existen
@@ -132,3 +135,17 @@ if (lastUpdateTimestamp) {
     // Si no hay una marca de tiempo, establecer una nueva
     localStorage.setItem('lastUpdateTimestamp', new Date().getTime());
 }
+
+//De Alfonso
+function mostrarDetalles(simbolo) {
+    const cryptoSeleccionada = listadoCryptos.find(crypto => crypto.symbol === simbolo);
+
+    if (cryptoSeleccionada) {
+        mostrarDetallesCrypto(cryptoSeleccionada);
+    }
+}
+//De Alfonso
+function borrarDetalles(){
+    const divInfo =  document.getElementById("detalles");
+    divInfo.innerText="";
+ }
